@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" type="module"></script>
+    <title>Minesweeper</title>
+  </head>
+  <audio src="Audio/doom.mp3" autoplay hidden loop></audio>
+
+  <body class="body">
+    <h3 class="title">MINESWEEPER</h3>
+    <div class="start">
+      <section class="btn">
+        <p class="rows-text">No. of Rows:</p>
+        <input type="number" class="rows" />
+        <button class="btn check" id="start">Start Game</button>
+      </section>
+    </div>
+    <div class="subtext hide">
+      Mines Left: <span data-mine-count>10</span> Time:
+      <label id="minutes">00</label>:<label id="seconds">00</label>
+    </div>
+    <div class="board hide"></div>
+  </body>
+</html>
